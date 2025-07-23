@@ -3476,7 +3476,7 @@ input, select, textarea {
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
-				display: flex;
+				display: block;
 				-moz-align-items: center;
 				-webkit-align-items: center;
 				-ms-align-items: center;
@@ -3486,7 +3486,7 @@ input, select, textarea {
 
 				#banner > .inner .content > * {
 					margin-right: 1.5em;
-					margin-bottom: 0;
+					margin-bottom: 1em;
 				}
 
 				#banner > .inner .content > :last-child {
@@ -3494,7 +3494,7 @@ input, select, textarea {
 				}
 
 				#banner > .inner .content p {
-					font-size: 0.7em;
+					font-size: 0.8em;
 					font-weight: 600;
 					letter-spacing: 0.25em;
 					text-transform: uppercase;
@@ -3579,7 +3579,7 @@ input, select, textarea {
 
 					#banner > .inner .content > * {
 						margin-right: 0;
-						margin-bottom: 2em;
+						/*margin-bottom: 2em;*/
 					}
 
 				#banner.major {
