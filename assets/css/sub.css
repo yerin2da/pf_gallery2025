@@ -1,0 +1,27 @@
+/*서브*/
+.sub{
+	padding-top: 0px;
+}
+.sub > nav{
+	background: #ffffff;
+	width: 100%;
+	height: 60px;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e1e1e1;: ;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.sub nav .back{
+	padding-left: 10px;
+	font-size: 25px;
+}
+.sub nav .go_page{
+	margin-right: 10px;
+}
+.sub_img_wrap{
+	padding: 0 40px;
+}
