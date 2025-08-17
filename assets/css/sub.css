@@ -24,5 +24,11 @@
 	margin-right: 40px;
 }
 .sub_img_wrap{
-	padding: 0 40px;
+	padding: 0 160px;
 }
+@media (max-width: 1200px) {
+	.sub_img_wrap {
+		padding: 0 40px;
+	}
+}
+
