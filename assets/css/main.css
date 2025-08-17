@@ -1,61 +1,6 @@
-a {
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-}
-
-ul, ol {
-	list-style: none;
-}
-img{
-	max-width: 100%;
-	height: auto;
-	display: block;
-}
-body {
-	font-family: 'Inter', sans-serif;
-	margin: 0;
-	background: #fff;
-	color: #222;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	padding: 40px 20px 0 20px;
-}
-.img_wrap{
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	overflow: hidden;
-}
-.img_wrap>img{
-	max-width: 114%;
-}
-
-
-header h1 {
-	margin: 15px 0 5px;
-	font-size: 24px;
-	font-weight: 600;
-}
-header p {
-	color: #666;
-	margin: 5px 0;
-}
-header .btn-group {
-	margin: 20px 0;
-}
-
 main{
 	max-width: 1200px;
 	padding: 20px;
-
 }
 
 main .bar{
@@ -80,48 +25,4 @@ main .bar{
 .card:hover {
 	transform: translateY(-4px);
 }
-.card img {
-	display: block;
-	width: 100%;
-	height: auto; /* 원본 비율 유지 */
-}
-.button{
-	width: fit-content;
-	padding: 5px 10px;
-	border-radius: 5px;
-	background: #000000;
-	color: #fff;
-	height: 25px;
-}
 
-/*서브*/
-.sub{
-	padding-top: 0px;
-}
-.sub > nav{
-	background: #ffffff;
-	width: 100%;
-	height: 60px;
-	padding: 10px 0;
-	margin-bottom: 20px;
-	border-bottom: 1px solid #e1e1e1;: ;
-	position: sticky;
-	top: 0px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-.sub nav .back{
-	padding-left: 10px;
-	font-size: 25px;
-}
-.sub nav .go_page{
-	margin-right: 10px;
-}
-.sub_img_wrap{
-	width: 100%;
-}
-
-footer{
-	padding: 20px;
-}
