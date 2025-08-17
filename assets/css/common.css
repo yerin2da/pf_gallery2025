@@ -49,6 +49,7 @@ img {
 	height: auto; /* 원본 비율 유지 */
 }
 .button{
+	-webkit-appearance: none; /* Safari 기본 버튼 스타일 제거 */
 	width: fit-content;
 	padding: 5px 10px;
 	border-radius: 5px;
