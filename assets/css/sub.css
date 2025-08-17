@@ -8,7 +8,7 @@
 	height: 60px;
 	padding: 10px 0px;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #e1e1e1;: ;
+	border-bottom: 1px solid #e1e1e1;
 	position: sticky;
 	top: 0px;
 	left: 0;
@@ -17,11 +17,11 @@
 	justify-content: space-between;
 }
 .sub nav .back{
-	padding-left: 30px;
+	padding-left: 40px;
 	font-size: 25px;
 }
 .sub nav .go_page{
-	margin-right: 30px;
+	margin-right: 40px;
 }
 .sub_img_wrap{
 	padding: 0 40px;
