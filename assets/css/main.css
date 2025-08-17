@@ -11,7 +11,7 @@ main .bar{
 }
 .gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
 .card {
@@ -21,8 +21,47 @@ main .bar{
 	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 	overflow: hidden;
 	transition: transform 0.2s ease;
+	position: relative;
+	cursor: pointer;
 }
 .card:hover {
 	transform: translateY(-4px);
+}
+.card .caption-wrap {
+	/*opacity: 1;*/
+	opacity: 0;
+	transition: 0.5s ease;
+	color: #fff;
+	position: absolute;
+	inset: 0;
+	background: rgba(0,0,0,.8);
+	padding: 20px;
+}
+
+.card:hover .caption-wrap {
+	opacity: 1;
+	pointer-events: none;
+}
+.card .caption-wrap .cap-tit{
+	font-weight: 600;
+	font-size: clamp(18px, 2vw, 24px);
+	padding-bottom: 10px;
+}
+.card .caption-wrap .cap-txt{
+	display: block;
+	font-size: clamp(14px, 2vw, 18px);
+
+}
+
+@media (max-width: 767px) {
+	.gallery {
+		grid-template-columns: repeat(2, 1fr); /* 2컬럼 */
+	}
+}
+
+@media (max-width: 500px) {
+	.gallery {
+		grid-template-columns: 1fr; /* 1컬럼 */
+	}
 }
 
