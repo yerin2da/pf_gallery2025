@@ -5,108 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>앙꼬짱구</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        body{
-            color: #333;
-        }
-        .wrap{
-            width: 100%;
-            max-width: 1920px;
-            position: relative;
-        }
-        a{
-            text-decoration: none;
-            color: #333;
-            cursor: pointer;
-
-        }
-        ul, li{
-            list-style: none;
-        }
-        img{
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-        .h-top{
-            padding: 0 40px;
-        }
-        .h-top>ul{
-            max-width: 1920px;
-            display: flex; align-items: center;
-            height: 40px;
-        }
-
-        .h-top>ul>li{
-            display: flex;
-            align-items: center;
-            width: fit-content;
-        }
-        .h-top>ul>li::before,
-        .h-top>ul>li::after{
-            content: "";
-            display: inline-block;
-            width: 1px;
-            height: 40px;
-            background: #39588F;
-        }
-
-        .h-top>ul>li>a{
-            color: #fff;
-            padding: 0 20px;
-            font-weight: 600;
-
-        }
-        .h-top>ul>li:first-child::after{
-            display: none;
-        }
-
-        .h-bot{
-            /*max-width: 1920px;*/
-
-            height: 80px;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 160px;
-        }
-        .h-bot .h-bot-left{
-            width: 100%;
-            max-width: 1400px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .h-bot .h-bot-left >ul{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 100px;
-        }
-        .h-bot .h-bot-left >ul>li{
-
-        }
-        .h-bot .h-bot-left >ul>li>a{
-            font-weight: 600;
-        }
-        .h-bot-right{
-            position: absolute;
-            top: 75px;
-            right: 40px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .fa-solid{
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/index2.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 <div class="wrap">
@@ -129,7 +30,9 @@
                     <li><a href="#" title="바로가기">예약/상담</a></li>
                 </ul>
                 <div class="logo-wrap">
-                    <img src="./images/gnb_logo.svg" alt="로고">
+                    <a href="#" title="메인페이지로 이동">
+                        <img src="./images/gnb_logo.svg" alt="로고">
+                    </a>
                 </div>
                 <ul>
                     <li><a href="#" title="바로가기">이용안내</a></li>
@@ -144,9 +47,133 @@
         </div>
     </header>
 
-    <main></main>
+    <main>
+        <div class="main-visual">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <iframe
+                                src="https://www.youtube.com/embed/haiS31Dv_Fw?autoplay=1&mute=1&controls=0&loop=1&playlist=haiS31Dv_Fw&modestbranding=1&rel=0&showinfo=0"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://chamhosp.co.kr/_File/popBanner//file_1709084686_0.jpg">
+                        <div class="slide-txt">
+                            <div class="txt-top">
+                                <p>위·대장 내시경부터 간담췌질환까지</p>
+                                <p>당일검사, 당일치료 가능!</p>
+                            </div>
+                            <div class="txt-bot">
+                                <p>소화기내과 전문의 7인</p>
+                                <p>참조은병원 소화기센터</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--슬라이드 컨트롤-->
+                <div class="control-wrap">
+                    <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span><i class="fa-solid fa-pause"></i></span>
+                    </div>
+                    <div class="control-right">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--메인비주얼 네비-->
+            <ul class="visual-nav">
+                <li>
+                    <a href="#" title="바로가기">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>진료예약</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="바로가기">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>진료상담</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="바로가기">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>입/퇴원안내</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="바로가기">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>건강검진</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="바로가기">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>검진 문진표</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="바로가기">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>제증명발급</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" title="바로가기">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <p>오시는 길</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
     <footer></footer>
 </div>
 
+
+<script src="./index2.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    const progressCircle = document.querySelector(".autoplay-progress svg");
+    const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        on: {
+            autoplayTimeLeft(s, time, progress) {
+                progressCircle.style.setProperty("--progress", 1 - progress);
+            }
+        }
+    });
+</script>
 </body>
 </html>

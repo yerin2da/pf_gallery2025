@@ -54,6 +54,8 @@ main .bar{
 	padding-bottom: 5px;
 }
 
+
+
 @media (max-width: 767px) {
 	.gallery {
 		grid-template-columns: repeat(2, 1fr); /* 2컬럼 */
