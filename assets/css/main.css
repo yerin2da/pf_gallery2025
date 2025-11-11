@@ -71,6 +71,7 @@ main .bar{
 	gap: 20px;
 }
 .card {
+	max-height: 300px;
 	display: inline-block;
 	background: #fff;
 	border-radius: 10px;

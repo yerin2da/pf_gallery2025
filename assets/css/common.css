@@ -9,9 +9,11 @@ ul, ol {
 	list-style: none;
 }
 img{
-	max-width: 100%;
-	height: auto;
+	/*max-width: 100%;*/
 	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 body {
 	font-family: 'Inter', sans-serif;
@@ -43,11 +45,6 @@ header .btn-group {
 	margin: 20px 0;
 }
 
-img {
-	display: block;
-	width: 100%;
-	height: auto; /* 원본 비율 유지 */
-}
 .button{
 	-webkit-appearance: none; /* Safari 기본 버튼 스타일 제거 */
 	width: fit-content;
