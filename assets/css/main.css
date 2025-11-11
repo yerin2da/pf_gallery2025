@@ -3,12 +3,67 @@ main{
 	max-width: 1200px;
 	padding: 20px;
 }
+/*==========탭메뉴==========*/
+.tab-menu {
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap: 5px;
+	position:relative;
+}
+.tab-menu:before {
+	content:'';
+	width:100%;
+	height:1px;
+	background:#c5dbff;
+	position:absolute;
+	bottom:0;
+}
+.tab-menu .tab-btn {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width: fit-content;
+	height:fit-content;
+	padding: 10px 20px;
+	margin-right:-1px;
+	background:#f7f7f7;
+	border:1px solid #e7e7e7;
+	border-bottom:1px solid #c5dbff;
+	border-radius: 5px 5px 0 0;
+	font-weight: 500;
+	color:#bbb;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.tab-menu .tab-btn:hover {
+	border:1px solid #ccc;
+	border-bottom:1px solid #c5dbff;
+	background:#fbfbfb;
+	color: #7f7d7d;
+	z-index:2;
+}
+.tab-menu .tab-btn.active {
+	color:#75a9ff;
+	border:1px solid #c5dbff;
+	border-bottom:1px solid #fff;
+	background:#fff;
+	z-index:2;
+}
+/* 탭 컨텐츠 */
+.tab-content {
+	display: none;
+}
+.tab-content.active {
+	display: block;
+}
 
+/*회색 바*/
 main .bar{
 	width: 100%;
 	height: 1px;
 	background: #E7E7E9;
-	margin: 50px 0;
+	margin: 20px 0;
 }
 .gallery {
 	display: grid;
@@ -38,7 +93,6 @@ main .bar{
 	background: rgba(0,0,0,.8);
 	padding: 20px;
 	pointer-events: none;
-
 }
 
 .card:hover .caption-wrap {
@@ -56,7 +110,38 @@ main .bar{
 	padding-bottom: 5px;
 }
 
+/* 모달창 */
+.modal{
+	position: fixed;
+	left: 0;top: 0;
+	width: 100%;max-height: 100vh;
+	overflow: auto;/*스크롤 바 하나 더 생기게 하는 거*/
+	background: rgba(0, 0, 0,0.7);
+	z-index: 9999;
+	display: none;
+}
+.modal_wrap{
+	width: 80%;
+	margin: 0px auto;
+	position: relative;
+}
 
+.modal_wrap>img{
+	width: 100%;
+}
+
+i.fa-times{
+	font-size: 30px;
+	color: #fff;
+	position: fixed;
+	top: 10px;right: 5%;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+i.fa-times:hover{
+	transform: rotate(-180deg);
+}
 
 @media (max-width: 767px) {
 	.gallery {
